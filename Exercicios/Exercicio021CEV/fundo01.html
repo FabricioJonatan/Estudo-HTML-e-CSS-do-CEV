@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando imagnes de fundo</title>
+
+    <style>
+        body{
+            background-image: url('imagens/wallpaper005.jpg');
+        }
+
+        div.quadrado{
+            display: inline-block;
+            border: 2px solid black;
+            background-color: lightgray;
+            border-radius: 10px;
+            width: 300px;
+            height: 100px;
+        }
+
+        div#q1{
+            background-color: lightblue;
+        }
+
+        div#q1:hover{
+            background-image: url('imagens/pattern001.png');
+        }
+
+        div#q2{
+            background-image: linear-gradient(90deg, purple, blue);
+        }
+
+        div#q2:hover{
+            background-image: url('imagens/pattern002.png');
+        }
+
+        div#achou{
+            background-image: url('imagens/pattern004.png');
+        }
+
+        div#achou:hover{
+            background-image: url('imagens/pattern003.png');
+        }
+    </style>
+</head>
+<body>
+    <h1>Ache as Flores!!</h1>
+    <div class="quadrado" id="q2">
+    </div>
+    <div class="quadrado" id="achou">
+    </div>
+    <div class="quadrado" id="q2">
+    </div>
+    <div class="quadrado" id="achou">
+    </div>
+    <div class="quadrado" id="q1">
+    </div>
+    <div class="quadrado" id="q1">
+    </div>
+    <div class="quadrado" id="q2">
+    </div>
+    <div class="quadrado" id="q1">
+    </div>
+    <div class="quadrado" id="achou">
+    </div>
+</body>
+</html>
