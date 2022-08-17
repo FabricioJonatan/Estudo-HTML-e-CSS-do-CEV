@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização vertical</title>
+
+    <style>
+        #conteiner{
+            position: relative;
+            width: 800px;
+            height: 400px;
+            background: darkgreen url('imagens/target001.png');
+            background-size: 100% 100%;
+            border: 5px solid red;
+            padding: 15px;
+        }
+        
+        #conteudo{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: lightgreen url('imagens/target001.png');
+            background-size: 100% 100%;
+            border: 5px solid blue;
+            margin: auto;
+
+            top: 50%;
+
+            transform: translate(0%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <section id="conteiner">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
