@@ -1,5 +1,7 @@
 @charset "utf-8";
+
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 :root{
@@ -8,6 +10,7 @@
     --cor3: #9C6C4E;
     --cor4: #694834;
 
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
     --font-padrao: 'Sriracha', cursive;
     --font-titulo: 'Courgette', cursive;
 }
@@ -20,24 +23,23 @@
 html, body{
     min-height: 100vh;
     background-color: var(--cor1);
+    font-family: var(--font1);
 }
 
 body{
     background-color: lightgray;
-    font-family: var(--font-padrao);
 }
 
 header{
     background-color: var(--cor4);
     color: white;
-    font-family: var(--font-padrao);
     text-align: center;
     padding: 60px;
 }
 
 h1{
     font-family: var(--font-titulo);
-    font-size: 3.5em;
+    font-size: 4em;
     font-variant: small-caps;
 }
 
@@ -50,6 +52,10 @@ header a{
 header a:hover{
     text-decoration: underline;
     color: white;
+}
+
+main{
+    font-family: var(--font-padrao);
 }
 
 section{
