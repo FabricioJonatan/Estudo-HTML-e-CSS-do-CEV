@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhando conteúdo da Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border: 2px solid black;
+            border-collapse: collapse;
+            width: 300px;
+            height: 300px;
+        }
+
+        td{
+            text-align: center;
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .direita{
+            text-align: right;
+        }
+
+        .baixo{
+            vertical-align: bottom;
+        }
+
+        .inferiordireito{
+            vertical-align: bottom;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Alinhamento de Conteúdo da tabela</h1>
+    <table>
+        <tr> <!--Linhas-->
+            <td class="direita">A1</td> <!--Colunas-->
+            <td class="baixo">B1</td> <!--Colunas-->
+            <td class="inferiordireito">C1</td> <!--Colunas-->
+        </tr>
+        <tr> <!--Linhas-->
+            <td class="direita">A2</td> <!--Colunas-->
+            <td class="baixo">B2</td> <!--Colunas-->
+            <td class="inferiordireito">C2</td> <!--Colunas-->
+        </tr>
+        <tr> <!--Linhas-->
+            <td class="direita">A3</td> <!--Colunas-->
+            <td class="baixo">B3</td> <!--Colunas-->
+            <td class="inferiordireito">C3</td> <!--Colunas-->
+        </tr>
+        <tr> <!--Linhas-->
+            <td class="direita">A4</td> <!--Colunas-->
+            <td class="baixo">B4</td> <!--Colunas-->
+            <td class="inferiordireito">C4</td> <!--Colunas-->
+        </tr>
+    </table>
+</body>
+</html>
