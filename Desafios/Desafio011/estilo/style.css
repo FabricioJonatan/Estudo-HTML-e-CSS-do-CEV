@@ -39,7 +39,7 @@ header{
 
 h1{
     font-family: var(--font-titulo);
-    font-size: 4em;
+    font-size: 6vw;
     font-variant: small-caps;
 }
 
@@ -59,24 +59,50 @@ main{
 }
 
 section{
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    font-size: 1.2em;
+    padding-top: 30px;
+    padding-bottom: 20px;
     padding-left: 40px;
     line-height: 2em;
 }
 
+section > p{
+    padding: 30px 0px;
+    margin: 20px 0px;
+}
+
 section.normal{
-    background-color: var(--cor2);
+    background-image: linear-gradient(360deg, var(--cor2), var(--cor3));
 }
 
 section.imagem{
     background-color: transparent;
+    padding-left: 20px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    box-shadow: inset 0px 5px 10px #00000084;
+    background-attachment: fixed;
 }
 
 section.imagem > p{
-    background-color: #0000003c;
-    width: 300px;
+    background-color: #0000007d;
+    color: white;
+    border-radius: 5px;
+    text-shadow: 2px 2px 1px #000000ab;
+    width: 250px;
     padding: 15px;
+}
+
+section#img1{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img2{
+    background-image: url('../imagens/background002.jpg');
+    background-position: right bottom;
+    background-size: cover;
 }
 
 footer{
