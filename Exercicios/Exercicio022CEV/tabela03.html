@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grandonas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 600px;
+            border-collapse: collapse;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        thead, tfoot{
+            background-color: lightblue;
+        }
+
+        .num{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Usando Tabelas Grandes</h1>
+    <p>Anatomia das tabelas</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Jogos</th>
+                <th>Preço</th>
+                <th>Horas registradas</th>
+                <th>Nota pessoal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cupead</td>
+                <td class="num">$R 53,00</td>
+                <td class="num">39</td>
+                <td class="num">10/10</td>
+            </tr>
+            <tr>
+                <td>Binding of Isaac</td>
+                <td class="num">$R 28,00</td>
+                <td class="num">45</td>
+                <td class="num">10/10</td>
+            </tr>
+            <tr>
+                <td>Celeste</td>
+                <td class="num">$R 10,00</td>
+                <td class="num">9</td>
+                <td class="num">10/10</td>
+            </tr>
+            <tr>
+                <td>Terraria</td>
+                <td class="num">$R 10,00</td>
+                <td class="num">30</td>
+                <td class="num">10/10</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Totais</th>
+                <td class="num">$R 101,00</td>
+                <td class="num">204</td>
+                <td class="num">10</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
