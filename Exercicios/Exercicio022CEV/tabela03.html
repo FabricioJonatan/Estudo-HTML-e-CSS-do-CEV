@@ -13,11 +13,35 @@
         table{
             width: 600px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption{
+            font-size: 1.4em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightcyan;
+            border: 1px solid black;
         }
 
         td, th{
             border: 1px solid black;
             padding: 5px;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            background-color: lightblue;
+            top: -1px;
+            border: 1px solid black;
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: white;
         }
 
         thead, tfoot{
@@ -33,12 +57,13 @@
     <h1>Usando Tabelas Grandes</h1>
     <p>Anatomia das tabelas</p>
     <table>
+        <caption>Dados dos meus Jogos</caption>
         <thead>
             <tr>
-                <th>Jogos</th>
-                <th>Preço</th>
-                <th>Horas registradas</th>
-                <th>Nota pessoal</th>
+                <th scope="col">Jogos</th>
+                <th scope="col">Preço</th>
+                <th scope="col">Horas registradas</th>
+                <th scope="col">Nota pessoal</th>
             </tr>
         </thead>
         <tbody>
@@ -66,15 +91,31 @@
                 <td class="num">30</td>
                 <td class="num">10/10</td>
             </tr>
+            <tr>
+                <td>Counter Strike</td>
+                <td class="num">$R 0,00</td>
+                <td class="num">40</td>
+                <td class="num">10/10</td>
+            </tr>
+            <tr>
+                <td>Brawlhala</td>
+                <td class="num">$R 0,00</td>
+                <td class="num">7</td>
+                <td class="num">10/10</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Totais</th>
+                <th scope="row">Totais</th>
                 <td class="num">$R 101,00</td>
-                <td class="num">204</td>
+                <td class="num">251</td>
                 <td class="num">10</td>
             </tr>
         </tfoot>
     </table>
+    <p>     Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis et atque in deleniti aperiam ratione dignissimos vero quisquam, nobis quidem perferendis assumenda esse itaque? Reprehenderit illum sequi consequatur dolorum ipsum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas illo error nam! Accusamus expedita quia laborum vitae alias modi rem assumenda, possimus mollitia optio doloribus incidunt nihil consequatur repellendus quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tempora suscipit cum nulla exercitationem sint iste expedita quaerat ratione vel facere id illo autem voluptatem eveniet veritatis, nobis officia ullam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut saepe voluptatibus assumenda libero reiciendis, doloremque expedita ducimus illo ex amet et eaque at, facilis praesentium maxime officia beatae explicabo itaque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium esse enim at commodi corporis. Inventore quaerat aperiam pariatur reiciendis consequatur est laborum! Reiciendis, quam. Placeat sapiente consequatur a tempora amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt aliquid incidunt, voluptatem quibusdam ullam itaque eveniet natus inventore consequuntur possimus, obcaecati dolorem tempora quas esse aspernatur odio, fugit quisquam vitae.</p>
+    <p>     Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis et atque in deleniti aperiam ratione dignissimos vero quisquam, nobis quidem perferendis assumenda esse itaque? Reprehenderit illum sequi consequatur dolorum ipsum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas illo error nam! Accusamus expedita quia laborum vitae alias modi rem assumenda, possimus mollitia optio doloribus incidunt nihil consequatur repellendus quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tempora suscipit cum nulla exercitationem sint iste expedita quaerat ratione vel facere id illo autem voluptatem eveniet veritatis, nobis officia ullam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut saepe voluptatibus assumenda libero reiciendis, doloremque expedita ducimus illo ex amet et eaque at, facilis praesentium maxime officia beatae explicabo itaque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium esse enim at commodi corporis. Inventore quaerat aperiam pariatur reiciendis consequatur est laborum! Reiciendis, quam. Placeat sapiente consequatur a tempora amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt aliquid incidunt, voluptatem quibusdam ullam itaque eveniet natus inventore consequuntur possimus, obcaecati dolorem tempora quas esse aspernatur odio, fugit quisquam vitae.</p>
+    <p>     Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis et atque in deleniti aperiam ratione dignissimos vero quisquam, nobis quidem perferendis assumenda esse itaque? Reprehenderit illum sequi consequatur dolorum ipsum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas illo error nam! Accusamus expedita quia laborum vitae alias modi rem assumenda, possimus mollitia optio doloribus incidunt nihil consequatur repellendus quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tempora suscipit cum nulla exercitationem sint iste expedita quaerat ratione vel facere id illo autem voluptatem eveniet veritatis, nobis officia ullam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut saepe voluptatibus assumenda libero reiciendis, doloremque expedita ducimus illo ex amet et eaque at, facilis praesentium maxime officia beatae explicabo itaque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium esse enim at commodi corporis. Inventore quaerat aperiam pariatur reiciendis consequatur est laborum! Reiciendis, quam. Placeat sapiente consequatur a tempora amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt aliquid incidunt, voluptatem quibusdam ullam itaque eveniet natus inventore consequuntur possimus, obcaecati dolorem tempora quas esse aspernatur odio, fugit quisquam vitae.</p>
+    <p>     Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis et atque in deleniti aperiam ratione dignissimos vero quisquam, nobis quidem perferendis assumenda esse itaque? Reprehenderit illum sequi consequatur dolorum ipsum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas illo error nam! Accusamus expedita quia laborum vitae alias modi rem assumenda, possimus mollitia optio doloribus incidunt nihil consequatur repellendus quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tempora suscipit cum nulla exercitationem sint iste expedita quaerat ratione vel facere id illo autem voluptatem eveniet veritatis, nobis officia ullam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut saepe voluptatibus assumenda libero reiciendis, doloremque expedita ducimus illo ex amet et eaque at, facilis praesentium maxime officia beatae explicabo itaque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium esse enim at commodi corporis. Inventore quaerat aperiam pariatur reiciendis consequatur est laborum! Reiciendis, quam. Placeat sapiente consequatur a tempora amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt aliquid incidunt, voluptatem quibusdam ullam itaque eveniet natus inventore consequuntur possimus, obcaecati dolorem tempora quas esse aspernatur odio, fugit quisquam vitae.</p>
 </body>
 </html>
