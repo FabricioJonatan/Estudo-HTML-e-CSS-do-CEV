@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 4</title>
+</head>
+<body>
+    <h1>Teste de Formulário 4</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="inome">Nome : </label>
+                <input type="text" name="nome" id="inome" placeholder="Digite seu Nome">
+            </p>
+            <p>
+                <label for="idemail">Email : </label>
+                <input type="email" name="email" id="idemail" placeholder="Digite seu email" required>
+            </p>
+            <p>
+                <label for="idphone">Telefone : </label>
+                <input type="tel" name="phone" id="idphone" placeholder="Digite seu Telefone">
+            </p>
+            <p>
+                <button type="reset">Reset</button>
+                <button type="submit">Enviar</button>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

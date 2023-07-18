@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+h1{
+    text-align: center;
+}
+
+header{
+    background-color: rgb(207, 207, 207);
+}
+
+menu{
+    background-color: rgb(158, 158, 158);
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+li{
+    padding: 10px;
+}
+
+article{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+h2{
+    text-align: center;
+}
