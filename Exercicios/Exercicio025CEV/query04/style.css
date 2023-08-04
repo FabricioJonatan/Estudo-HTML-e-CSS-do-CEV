@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/* Mobile firts */
+
+/* Reset */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    background: black url('../pacote-imagens-cap25/imagens/back-phone.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+main{
+    background-color: #ffffff6f;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+img{
+    margin: 0 auto;
+    display: block;
+}
+
+h1{
+    text-align: center;
+    font-size: 2em;
+}
+
+img#tablet{ display: none; }
+img#print{ display: none; }
+img#pc{ display: none; }
+img#tv{ display: none; }
